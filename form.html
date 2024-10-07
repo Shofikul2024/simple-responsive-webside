@@ -6,16 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form</title>
     <style>
-        .loging-form{
+        .loging-form-container {
+
+            display: flex;
+            justify-content: center;
+            <!-- border: 1px solid salmon; -->
+            align-items: center;
+            height: 90vh;
+        }
+
+        .loging-form {
 
             display: flex;
             flex-direction: column;
+            width: 50%;
+            <!-- border: 2px solid aqua; -->
         }
 
-.loging-form input{
-margin-top: 20px;
+        .loging-form input {
+            margin-top: 20px;
 
-}
+        }
 
         nav {
 
@@ -42,15 +53,19 @@ margin-top: 20px;
         <a href="">about</a>
         <a href="">loging</a>
 
-
     </nav>
-    <form class="loging-form">
-        <h3>please loging </h3>
-        <input type="email" name="" id="" placeholder="Your email">
-<input type="password" name="" id="" placeholder=" Your password">
-<input type="submit" value="" value="loging">
- 
-    </form>
+
+    <section class="loging-form-container">
+
+        <form class="loging-form">
+            <h3>please loging </h3>
+            <input type="email" name="" id="" placeholder="Your email" required>
+            <input type="password" name="" id="" placeholder=" Your password" required>
+            <input type="submit" value="loging">
+        </form>
+
+    </section>
+
 </body>
 
 </html>
